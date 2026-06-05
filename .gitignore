@@ -1,0 +1,50 @@
+# ========================
+# DocuMind — .gitignore
+# ========================
+
+# Environment variables — NEVER commit API keys
+.env
+.env.local
+.env.*.local
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# FAISS index files (can be large; regenerate from PDFs)
+faiss_index/
+*.index
+*.pkl
+
+# Streamlit cache
+.streamlit/secrets.toml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter Notebooks (if any)
+.ipynb_checkpoints/
+
+# Uploaded PDFs (user data, not source code)
+uploaded_pdfs/
+*.pdf
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
